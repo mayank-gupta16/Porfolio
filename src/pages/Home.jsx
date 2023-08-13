@@ -8,6 +8,7 @@ export default function Home() {
       <div className="container">
         <div className="row">
 
+          {/* row 1 */}
           <div className="col-12 col-md-5 order-0 order-md-1 m-5 align-items-center">
             <div className="animation-home-page">
               <Player
@@ -18,6 +19,8 @@ export default function Home() {
               ></Player>
             </div>
           </div>
+
+
 
           <div className="col-12 col-md-5 order-1 order-md-0">
             <div className="animated-title m-5">
@@ -48,6 +51,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="row">
+          {/* row2  */}
+          
+        </div>
+
       </div>
     </>
   );

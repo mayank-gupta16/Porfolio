@@ -1,13 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary ">
         <div className="container-fluid">
-          <a className="navbar-brand ms-5" href="#">
-            MKGupta
-          </a>
+          <NavLink className="navbar-brand ms-5" href="#">
+            Mk Gupta
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -20,36 +21,40 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto fs-5 d-flex " style={{"marginRight":"8rem"}}>
+            <ul
+              className="navbar-nav ms-auto fs-5 d-flex "
+              style={{ marginRight: "8rem" }}
+            >
               <li className="nav-item ">
                 <div>
-                  <a className="nav-link" aria-current="page" href="#">
+                  <NavLink to="/Home" className="nav-link" href="#">
                     Home
-                  </a>
+                  </NavLink>
                 </div>
+                <div className="underline"></div>
               </li>
               <li className="nav-item ">
                 <div>
-                  <a className="nav-link" href="#">
+                  <NavLink to="/BlogGroup" className="nav-link" href="#">
                     Blog
-                  </a>
+                  </NavLink>
                 </div>
+                <div className="underline"></div>
               </li>
               <li className="nav-item ">
                 <div>
-                  <a className="nav-link" href="#">
+                  <NavLink to="/Project" className="nav-link" href="#">
                     Project
-                  </a>
+                  </NavLink>
                 </div>
+                <div className="underline"></div>
               </li>
               <li className="nav-item">
                 <div>
-                  <a
-                    className="nav-link"
-                    href="#"
-                  >
+                  <NavLink to="/Contact" className="nav-link" href="#">
                     Contact
-                  </a>
+                  </NavLink>
+                  <div className="underline bg-black"></div>
                 </div>
               </li>
             </ul>

@@ -22,7 +22,6 @@ body {
   }
 }
 .nav-link {
-  color: #000000;
   font-weight: 450;
   font-size: 1.25rem;
 
@@ -32,7 +31,6 @@ body {
   }
 }
 .nav-item > div {
-  /* display: inline-block; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,3 +254,12 @@ body {
 }
 
 /* Footer ends*/
+
+/* Blog Page starts*/
+
+.brief-blog-box{
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+/* Blog Page starts*/

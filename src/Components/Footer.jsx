@@ -12,7 +12,7 @@ export default function Footer() {
         </div>
         <ul className="social-icon">
           <li className="social-icon__item">
-            <a className="social-icon__link" href="#">
+            <a className="social-icon__link twitter-icon" href="https://twitter.com/mayankg16" target="_blank">
               <svg
                 fill="#FFF"
                 xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ export default function Footer() {
             </a>
           </li>
           <li className="social-icon__item">
-            <a className="social-icon__link" href="#">
+            <a className="social-icon__link linkedin-icon" href="https://www.linkedin.com/in/mayank-gupta-7104a21a6/" target="_blank">
               <svg
                 fill="#FFF"
                 xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ export default function Footer() {
             </a>
           </li>
           <li className="social-icon__item">
-            <a className="social-icon__link" href="#">
+            <a className="social-icon__link" href="https://www.instagram.com/mkgupta.exe/" target="_blank">
               <svg
                 fill="#FFF"
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ export default function Footer() {
             </a>
           </li>
           <li className="social-icon__item">
-            <a className="social-icon__link" href="#">
+            <a className="social-icon__link github-icon" href="https://github.com/mayank-gupta16" target="_blank">
               <svg
                 fill="#FFF" 
                 xmlns="http://www.w3.org/2000/svg"
