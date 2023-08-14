@@ -6,7 +6,7 @@ export default function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary ">
         <div className="container-fluid">
-          <NavLink className="navbar-brand ms-5" href="#">
+          <NavLink to="/Home"className="navbar-brand ms-5" href="#">
             Mk Gupta
           </NavLink>
           <button
