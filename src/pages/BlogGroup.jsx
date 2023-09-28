@@ -2,6 +2,7 @@ import * as React from "react";
 import BlogCard from "../Components/BlogCard";
 import AllBlogs from "../../Blogs/data.json";
 
+
 export default function BlogGroup() {
   return (
     <>
@@ -13,11 +14,14 @@ export default function BlogGroup() {
                 <div className="col-sm-2 col-md-4 align-items-center brief-blog-section" key={blog.key}>
                   <BlogCard
                     Image={blog.Image}
-                    Content={blog.Topic}
-                    Topic={blog.Content}
-                    Share={blog.Share}
-                    LearnMore={blog.LearnMore}
+                    DateTime={blog.DateTime}
+                    Topic={blog.Topic}
+                    Summary={blog.Summary}
+                    Para={blog.Para}
+                    uniqueIdentifier={blog.key}
+                    Share={""}
                   />
+                  
                 </div>
               );
             })

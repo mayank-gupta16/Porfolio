@@ -36,9 +36,8 @@ export default function Home() {
                     options={{
                       strings: [
                         "SOFTWARE DEVELOPER",
-                        "MERN STACK DEVELOPER",
-                        "LINUX EXPERT",
-                        "AI SOLUTION SPECIALIST",
+                        "DATA SCIENTIST",
+                        "CLOUD ENGINEER"
                       ],
                       autoStart: true,
                       loop: true,

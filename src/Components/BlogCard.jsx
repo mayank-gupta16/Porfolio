@@ -5,8 +5,15 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { NavLink } from "react-router-dom";
 
-export default function BlogCard({ Image, Content, Topic, Share, LearnMore }) {
+export default function BlogCard({
+  Image,
+  DateTime,
+  Topic,
+  uniqueIdentifier,
+  Summary,
+}) {
   return (
     <div>
       <Card sx={{ maxWidth: 400 }} className="mb-5 blog-card">
@@ -15,24 +22,23 @@ export default function BlogCard({ Image, Content, Topic, Share, LearnMore }) {
           <Typography gutterBottom variant="h5" component="div">
             {Topic}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {Content}
+          <Typography variant="body3" color="text.primary">
+            {Summary}
+          </Typography>
+          <Typography variant="body2" color="gray" className="mt-3">
+            {"\u2B24 "}
+            {" " + DateTime}
           </Typography>
         </CardContent>
         <CardActions>
           <Button size="small">
-            <a href={Share} rel="noreferrer" className="text-decoration-none">
-              Share
-            </a>
-          </Button>
-          <Button size="small">
-            <a
-              href={LearnMore}
+            <NavLink
+              to={"/Blog/" + uniqueIdentifier}
               rel="noreferrer"
               className="text-decoration-none"
             >
-              Learn More
-            </a>
+              Visit Blog
+            </NavLink>
           </Button>
         </CardActions>
       </Card>
